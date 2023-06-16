@@ -1,5 +1,5 @@
-CREATE TABLE User (
-    UserID text PRIMARY KEY UNIQUE NOT NULL,
-    UserName VARCHAR(50),
-    Password VARCHAR(50),
-)
+CREATE TABLE UserName (
+    userID text PRIMARY KEY UNIQUE NOT NULL,
+    userName VARCHAR(50),
+    password VARCHAR(50)
+);

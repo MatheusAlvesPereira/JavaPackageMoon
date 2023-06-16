@@ -1,4 +1,6 @@
 package com.MyFirstProject.myprojectweb.Model;
 
-public class Model {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User,String> {
 }
