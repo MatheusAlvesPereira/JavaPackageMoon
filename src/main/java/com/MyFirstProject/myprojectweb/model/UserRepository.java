@@ -1,4 +1,4 @@
-package com.MyFirstProject.myprojectweb.Model;
+package com.MyFirstProject.myprojectweb.model;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

@@ -9,6 +9,6 @@ import java.math.BigDecimal;
 class MyprojectwebApplicationTests {
 	@Test
 	void contextLoads() {
-		System.out.println("iniciando teste");
+		System.out.println("Starter Test ok");
 	}
 }

@@ -1,6 +1,6 @@
-package com.MyFirstProject.myprojectweb.Controller;
+package com.MyFirstProject.myprojectweb.controller;
 
-import com.MyFirstProject.myprojectweb.Model.UserRepository;
+import com.MyFirstProject.myprojectweb.model.UserRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
