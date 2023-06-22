@@ -16,3 +16,23 @@ Dependencies:<br>
 *lombook<br>
 <br>
 *Maven
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+$ git clone https://github.com/MatheusAlvesPereira/JavaPackageMoon.git
+```
+
+2. Install dependencies with Maven
+
+## Usage
+
+1. Start the application with Maven
+2. The API will be accessible at http://localhost:8080
+
+## Database
+The project uses PostgresSQL as the database. The necessary database migrations are managed using Flyway.
+
+To install PostgresSQL locally you can [click here](https://www.postgresql.org/download/).
