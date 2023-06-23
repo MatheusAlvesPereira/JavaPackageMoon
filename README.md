@@ -15,7 +15,6 @@ Dependencies:<br>
 *Junit<br>
 *lombook<br>
 <br>
-*Maven
 
 ## Installation
 
