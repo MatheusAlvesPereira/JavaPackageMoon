@@ -28,8 +28,9 @@ $ git clone https://github.com/MatheusAlvesPereira/JavaPackageMoon.git
 
 ## Usage
 
-1. Start the application with Maven
-2. The API will be accessible at http://localhost:8080
+1. run MyprojectwebApplicationTests as a test.
+2. Start the application with Maven.
+3. The API will be accessible at http://localhost:8080.
 
 ## Database
 The project uses PostgresSQL as the database. The necessary database migrations are managed using Flyway.
