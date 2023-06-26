@@ -24,13 +24,15 @@ $ git clone https://github.com/MatheusAlvesPereira/JavaPackageMoon.git
 ```
 
 2. Install dependencies with Maven
+3. Install an JDK exemple: Oracle OpenJDK20.0.1
 
 ## Usage
 
-1. Configure application.properties spring.datasource
-2. run MyprojectwebApplicationTests as a test.
-3. Start the application with Maven.
-4. The API will be accessible at http://localhost:8080.
+1. Start the application with Maven.
+2. Configure application.properties spring.datasource and create a database....
+3. run test.
+4. run aplication.
+5. The API will be accessible at http://localhost:8080.
 
 ## Database
 The project uses PostgresSQL as the database. The necessary database migrations are managed using Flyway.
