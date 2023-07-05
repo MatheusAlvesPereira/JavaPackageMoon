@@ -3,7 +3,7 @@
 ## REST Server in Java - Starter Application
 
 Rest server in Java, using: Spring, Spring Boot, TDD with Junit, persistence implemented in JPA and also  is an excellent starting point to build your application.
-A Package Java Spring (Java 20)<br>
+A Package Java Spring (Java 20) and Apache Tomcat/10.1.8<br>
 <br>
 Dependencies:<br>
 <br>
