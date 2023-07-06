@@ -3,7 +3,7 @@ package com.MyFirstProject.myprojectweb.model;
 import jakarta.persistence.*;
 import lombok.*;
 
-@Table(name = "username")
+@Table(name = "username", schema = "public")
 @Entity(name = "user")
 @Getter
 @Setter
