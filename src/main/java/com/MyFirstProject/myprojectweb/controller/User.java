@@ -11,12 +11,15 @@ import org.springframework.web.bind.annotation.*;
 public class User {
     @Autowired
     private UserRepository userRepository;
+
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     @GetMapping
     public ResponseEntity getAllUser(){
         var allUser = userRepository.findAll();
         return ResponseEntity.ok(allUser);
     }
 
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     @PostMapping
     public ResponseEntity registerUser(@RequestBody @Valid RequestUser data){
         System.out.println(data);
