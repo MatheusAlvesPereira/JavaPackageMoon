@@ -1,5 +1,6 @@
 package com.MyFirstProject.myprojectweb.model;
 
+import com.MyFirstProject.myprojectweb.controller.RequestUser;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -17,4 +18,9 @@ public class User {
     private String userName;
 
     private String password;
+
+    public User(RequestUser requestUser) {
+        this.userName = requestUser.username();
+        this.password = requestUser.password();
+    }
 }

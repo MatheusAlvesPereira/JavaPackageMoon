@@ -1,4 +1,9 @@
 package com.MyFirstProject.myprojectweb.controller;
 
-public record RequestUser(String username, String password) {
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
+public record RequestUser(
+        @NotNull @NotBlank String username,
+        @NotNull @NotBlank String password) {
 }
