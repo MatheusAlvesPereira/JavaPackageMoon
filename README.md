@@ -33,7 +33,7 @@ $ git clone https://github.com/MatheusAlvesPereira/JavaPackageMoon.git
 2. Configure application.properties spring.datasource and create a database....
 3. run test.
 4. run aplication.
-5. The API will be accessible at http://localhost:8080.
+5. The API will be accessible with Apache Tomcat at http://localhost:8080.
 
 ## Database
 The project uses PostgresSQL as the database. The necessary database migrations are managed using Flyway.
