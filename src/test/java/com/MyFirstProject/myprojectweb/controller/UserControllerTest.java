@@ -29,7 +29,8 @@ public class UserControllerTest {
                 .accept(MediaType.APPLICATION_JSON))
                 .andDo(MockMvcResultHandlers.print())
                 .andExpect(MockMvcResultMatchers.status().isOk())
-                .andExpect(MockMvcResultMatchers.jsonPath("$.employees").exists())
-                .andExpect(MockMvcResultMatchers.jsonPath("$.employees[*].employeeId").isNotEmpty());
+                .andExpect(MockMvcResultMatchers.jsonPath("$.userID").exists())
+                .andExpect(MockMvcResultMatchers.jsonPath("$.userName").exists())
+                .andExpect(MockMvcResultMatchers.jsonPath("$.password").exists());
     }
 }
