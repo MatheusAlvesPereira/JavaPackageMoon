@@ -3,7 +3,6 @@ package com.MyFirstProject.myprojectweb.controller;
 import com.MyFirstProject.myprojectweb.model.User;
 import com.MyFirstProject.myprojectweb.model.UserRepository;
 import jakarta.validation.Valid;
-import org.aspectj.apache.bcel.Repository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -30,7 +29,7 @@ public class UserController {
     }
 
     @PutMapping
-    public ResponseEntity updateUser(@RequestBody @Valid RequestUser data){
+    public ResponseEntity<User> updateUser(@PathVariable @RequestBody @Valid RequestUser data){
         User user = userRepository.getReferenceById(data.id());
         user.setUserName(data.username());
         user.setPassword(data.password());
