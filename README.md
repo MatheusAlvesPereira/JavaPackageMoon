@@ -45,6 +45,8 @@ The project uses PostgresSQL as the database. The necessary database migrations 
 
 To install PostgresSQL locally you can [click here](https://www.postgresql.org/download/).
 
+![modelagem de dados](https://github.com/MatheusAlvesPereira/JavaPackageMoon/assets/99885299/b4b80fc7-4793-4610-8a35-503905f93cb7)
+
 ## Spring Boot - Building RESTful Web Services
 
 if you have any questions about Building RESTful Web Services check this link
