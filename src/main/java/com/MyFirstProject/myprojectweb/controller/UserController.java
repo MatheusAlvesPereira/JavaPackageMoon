@@ -27,12 +27,4 @@ public class UserController {
         userRepository.save(newUser);
         return ResponseEntity.ok().build();
     }
-
-    @PutMapping
-    public ResponseEntity<User> updateUser(@PathVariable @RequestBody @Valid RequestUser data){
-        User user = userRepository.getReferenceById(data.id());
-        user.setUserName(data.username());
-        user.setPassword(data.password());
-        return ResponseEntity.ok(user);
-    }
 }
