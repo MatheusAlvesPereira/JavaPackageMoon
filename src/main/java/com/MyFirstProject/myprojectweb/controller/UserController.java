@@ -14,7 +14,7 @@ public class UserController {
     private UserRepository userRepository;
 
     @CrossOrigin(origins = "*", allowedHeaders = "*")
-    @GetMapping
+    @GetMapping(value = "/user")
     public ResponseEntity getAllUser(){
         var allUser = userRepository.findAll();
         return ResponseEntity.ok(allUser);

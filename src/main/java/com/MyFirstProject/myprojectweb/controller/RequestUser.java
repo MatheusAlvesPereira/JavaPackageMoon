@@ -4,7 +4,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
 public record RequestUser(
-        Long id,
+        @NotNull Long id,
         @NotNull @NotBlank String username,
         @NotNull @NotBlank String password) {
 }

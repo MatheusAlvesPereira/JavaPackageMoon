@@ -12,8 +12,8 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@WebMvcTest(UserController.class)
 @RunWith(SpringRunner.class)
+@WebMvcTest(UserController.class)
 public class userControllerTest {
 
     @Autowired
@@ -21,8 +21,8 @@ public class userControllerTest {
     @Test
     public void getUsersAPI() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders
-                    .get("/user")
-                    .accept(MediaType.APPLICATION_JSON))
+                        .get("/user")
+                        .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(MockMvcResultMatchers.jsonPath("$[*].userID").exists())
                 .andExpect(MockMvcResultMatchers.jsonPath("$[*].userName").exists())
