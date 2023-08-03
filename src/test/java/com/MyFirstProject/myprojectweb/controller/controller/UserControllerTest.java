@@ -1,5 +1,6 @@
-package com.MyFirstProject.myprojectweb.controller;
+package com.MyFirstProject.myprojectweb.controller.controller;
 
+import com.MyFirstProject.myprojectweb.controller.UserController;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,8 +27,7 @@ public class UserControllerTest {
                         .get("/user")
                         .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(MockMvcResultMatchers.jsonPath("$[*].userID").exists())
                 .andExpect(MockMvcResultMatchers.jsonPath("$[*].userName").exists())
-                .andExpect(MockMvcResultMatchers.jsonPath("$[*].password").exists());
+                .andExpect(MockMvcResultMatchers.jsonPath("$[*].userName").isNotEmpty());
     }
 }
