@@ -12,8 +12,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
 @ExtendWith(SpringExtension.class)
 @WebMvcTest(UserController.class)
 @ContextConfiguration(classes = UserControllerTest.class)
@@ -26,8 +24,7 @@ public class UserControllerTest {
         mockMvc.perform(MockMvcRequestBuilders
                         .get("/user")
                         .accept(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk())
-                .andExpect(MockMvcResultMatchers.jsonPath("$[*].userName").exists())
-                .andExpect(MockMvcResultMatchers.jsonPath("$[*].userName").isNotEmpty());
+                .andExpect(MockMvcResultMatchers.jsonPath("$[*].userName").isNotEmpty())
+                .andExpect(MockMvcResultMatchers.jsonPath("$[*].password").isNotEmpty());
     }
 }
