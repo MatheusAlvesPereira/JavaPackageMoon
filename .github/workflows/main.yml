@@ -1,0 +1,43 @@
+name: GitHub Actions Demo
+run-name: pipeline JavaPackageMoon 🚀
+on: [push]
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: dev
+      url: https://dev.example.com
+    steps:
+      - run: echo build
+
+  deploy-dev:
+    runs-on: ubuntu-latest
+    environment:
+      name: dev
+      url: https://dev.example.com
+
+    needs: [build]
+    steps:
+      - run: echo dev
+
+
+  deploy-hmg:
+    runs-on: ubuntu-latest
+    environment:
+      name: dev
+      url: https://dev.example.com
+
+    needs: [deploy-dev]
+    steps:
+      - run: echo hmg
+
+  deploy-prd:
+    runs-on: ubuntu-latest
+    environment:
+      name: dev
+      url: https://dev.example.com
+
+    needs: [deploy-hmg]
+    steps:
+      - run: echo production
