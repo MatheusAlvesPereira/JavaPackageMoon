@@ -11,7 +11,7 @@ Please note we have a code of conduct, please follow it in all your interactions
 1. fork the repo.
 2. Ensure any install or build dependencies are removed before the end of the layer when doing a 
    build.
-3. Create a new branch for pull request.
+3. Create a new branch for pull request to dev.
 
 ## Code of Conduct
 
