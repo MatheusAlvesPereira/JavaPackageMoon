@@ -47,3 +47,18 @@ To install PostgresSQL locally you can [click here](https://www.postgresql.org/d
 
 if you have any questions about Building RESTful Web Services check this link
 [click here](https://www.tutorialspoint.com/spring_boot/spring_boot_building_restful_web_services.htm)
+
+# Contributing
+
+When contributing to this repository, please first discuss the change you wish to make via issue,
+email, or any other method with the owners of this repository before making a change. [Contributing Guide](https://github.com/MatheusAlvesPereira/JavaPackageMoon/blob/main/CONTRIBUTING.md) 
+
+Please note we have a code of conduct, please follow it in all your interactions with the project.
+
+## Pull Request Process
+
+
+1. fork the repo.
+2. Ensure any install or build dependencies are removed before the end of the layer when doing a 
+   build.
+3. Create a new branch for pull request to dev.
