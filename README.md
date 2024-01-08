@@ -22,7 +22,7 @@ $ git clone https://github.com/MatheusAlvesPereira/JavaPackageMoon.git
 ```
 
 2. Install dependencies with Maven
-3. Install an JDK exemple: Oracle OpenJDK20.0.1
+3. Install JDK Oracle OpenJDK version 21.0.1
 
 ## Usage
 
