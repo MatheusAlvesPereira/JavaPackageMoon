@@ -11,7 +11,7 @@ Dependencies:<br>
 *Postgresql<br>
 *JPA<br>
 *Junit<br>
-*lombook<br>
+*lombok<br>
 
 ## Installation
 
@@ -29,7 +29,7 @@ $ git clone https://github.com/MatheusAlvesPereira/JavaPackageMoon.git
 1. Start the application with Maven.
 2. Configure application.properties spring.datasource and create a database....
 3. run test.
-4. run aplication.
+4. run application.
 5. The API will be accessible with Apache Tomcat at http://localhost:8080.
 
 ## Database
@@ -37,9 +37,9 @@ The project uses PostgresSQL as the database. The necessary database migrations 
 
 To install PostgresSQL locally you can [click here](https://www.postgresql.org/download/).
 
-## Spring Boot - Building RESTful Web Services
+## Spring Boot - Building RESTFUL Services
 
-if you have any questions about Building RESTful Web Services check this link
+if you have any questions about Building RESTFUL Web Services check this link
 [click here](https://www.tutorialspoint.com/spring_boot/spring_boot_building_restful_web_services.htm)
 
 # Contributing
