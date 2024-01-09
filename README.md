@@ -14,13 +14,11 @@ Dependencies:<br>
 *lombok<br>
 
 ## Installation
-
-1. Clone the repository:
-
 ```bash
 $ git clone https://github.com/MatheusAlvesPereira/JavaPackageMoon.git
 ```
 
+1. Clone the repository...
 2. Install dependencies with Maven
 3. Install JDK Oracle OpenJDK version 21.0.1
 
